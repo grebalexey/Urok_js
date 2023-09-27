@@ -73,20 +73,92 @@
 // button2.showBtn();
 
 
-let value = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+// let value = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 
-function game(){
-    let answer = +prompt("введите число", "");
-    if (answer > value){
-        alert ("Ваше число больше")
-        game()
-        return
-    } else if (answer < value){
-        alert ("Ваше число меньше")
-        game()
-        return
-    } else if (answer === value){
-        alert ("Угадали!")
-    }
-}
+// function game(){
+//     let answer = +prompt("введите число", "");
+//     if (answer > value){
+//         alert ("Ваше число больше")
+//         game()
+//         return
+//     } else if (answer < value){
+//         alert ("Ваше число меньше")
+//         game()
+//         return
+//     } else if (answer === value){
+//         alert ("Угадали!")
+//     }
+// }
 
+
+
+// const btn = document.querySelector("#button")
+// console.log(btn)
+
+// const btn1 = $("#button")
+// console.log(btn1[0])
+
+// btn.addEventListener("click", function(){
+//     console.log("wqwqqwd");
+// })
+
+// $("#button").hover(function(){
+//     console.log("eto hover")
+// })
+
+// btn.addEventListener("mouseover", function(){
+//     btn.style.color = "blue";
+// })
+
+// btn.addEventListener("mouseout", function(){
+//     btn.style.color = "red";
+// })
+
+// btn.addEventListener("submit", function(){
+//     btn.style.color = "red";
+// })
+
+
+// const clickOnBtn = function(){
+//     console.log("Жмякнул снова")
+//     console.log(event)
+//     btn.classList.add("newClass, newClass2")
+//     btn.classList.remove("newClass")
+//     btn.classList.toggle("newClass")
+//     if (btn.classList.contains("newClass")){
+
+//     }
+//     btn.classList.replace("oldClass", "newClass")
+// }
+
+// btn.addEventListener("click", clickOnBtn);
+// btn.removeEventListener("click", clickOnBtn);
+
+
+
+
+
+// document.addEventListener("keyup", function(event){
+//     if (event.key == "Escape"){
+//         alert("вы нажали Escape")
+//     }
+// })
+
+
+// document.addEventListener("keydown", function(event){
+//     alert(event.key);
+//     if (event.key == "F5"){
+//         event.preventDefault()
+//         return
+//     }
+
+// })
+
+
+
+const tabHead = document.querySelector(".tabs__head")
+const tabBody = document.querySelector(".tabs__body")
+
+tabHead.addEventListener('click', function(){
+    tabBody.classList.toggle(".tabs__body--open");
+})
